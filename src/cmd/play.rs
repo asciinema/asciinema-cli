@@ -29,6 +29,7 @@ impl Command for cli::Play {
                 idle_time_limit,
                 self.pause_on_markers,
                 &keys,
+                self.resize,
             )?;
 
             if !self.loop_ {
