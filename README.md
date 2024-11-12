@@ -97,7 +97,7 @@ The above command will build the binary and place the man pages in `/foo/man/`,
 and the shell completion files in the `/foo/completion/` directory.
 
 > [!NOTE]
-> Windows is currently not supported. _(See [#467](https://github.com/asciinema/asciinema/issues/467))_
+> Windows is currently not supported. _(See [#467](https://github.com/asciinema/asciinema/issues/467))_ You can try [PowerSession](https://github.com/Watfaq/PowerSession-rs) instead.
 
 ## Development
 
