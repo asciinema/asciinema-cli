@@ -68,7 +68,7 @@
 * Official support for Python 3.7
 * Recording is now possible on US-ASCII locale (thanks Jean-Philippe @jpouellet Ouellet!)
 * Improved Android support (thanks Fredrik @fornwall Fornwall!)
-* Possibility of programatic recording with `asciinema.record_asciicast` function
+* Possibility of programmatic recording with `asciinema.record_asciicast` function
 * Uses new JSON response format added recently to asciinema-server
 * Tweaked message about how to stop recording (thanks Bachynin @vanyakosmos Ivan!)
 * Added proper description and other metadata to Python package (thanks @Crestwave!)
@@ -160,7 +160,7 @@ Other notable changes:
 * `--max-wait` option has shorter alternative: `-w`
 * Import paths changed to `github.com/asciinema/asciinema` due to repository
   renaming
-* `-y` also suppresess "please resize terminal" prompt
+* `-y` also suppress "please resize terminal" prompt
 
 ## 1.0.0.rc1 (2015-03-02)
 
