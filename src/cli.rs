@@ -125,6 +125,10 @@ pub struct Play {
     /// Automatically pause on markers
     #[arg(short = 'm', long)]
     pub pause_on_markers: bool,
+
+    /// Resize terminal window with control sequences.
+    #[arg(short = 'r', long)]
+    pub resize: bool,
 }
 
 #[derive(Debug, Args)]
