@@ -96,6 +96,28 @@ ASCIINEMA_GEN_DIR=/foo cargo build --release
 The above command will build the binary and place the man pages in `/foo/man/`,
 and the shell completion files in the `/foo/completion/` directory.
 
+The whole intallation proccess, include the man pages and shell completion.
+
+```sh
+git clone https://github.com/asciinema/asciinema
+cd asciinema
+cargo build --release
+echo $PATH
+sudo cp target/asciinema /usr/bin/
+ls /usr/bin/ | grep ascii
+ASCIINEMA_GEN_DIR=~/asciinema/ cargo build --release
+ls man/ | wc -l
+ls /usr/share/man/man1/
+sudo cp man/* /usr/share/man/man1/
+ls /usr/share/man/man1 | grep asci | wc -l
+sudo mandb
+man asciinema
+ls completion/
+ls /etc/bash_completion.d/
+sudo cp completion/* /etc/bash_completion.d/
+asciinema --help
+```
+
 > [!NOTE]
 > Windows is currently not supported. _(See [#467](https://github.com/asciinema/asciinema/issues/467))_
 
